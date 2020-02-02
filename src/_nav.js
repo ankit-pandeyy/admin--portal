@@ -21,6 +21,18 @@ export default {
       name: 'DATA CENTER',
       url: '/base',
       icon: 'icon-puzzle',
+      children: [
+        {
+          name: 'SERVER',
+          url: '/buttons/buttons',
+          icon: 'icon-cursor',
+        },
+        {
+          name: 'DEVICES',
+          url: '/buttons/button-dropdowns',
+          icon: 'icon-cursor',
+        },
+      ]
     },
     {
       name: 'CHANGE REQUEST',
@@ -28,25 +40,15 @@ export default {
       icon: 'icon-cursor',
       children: [
         {
-          name: 'Buttons',
+          name: 'CPU',
           url: '/buttons/buttons',
           icon: 'icon-cursor',
         },
         {
-          name: 'Button dropdowns',
+          name: 'RAM MEMORY',
           url: '/buttons/button-dropdowns',
           icon: 'icon-cursor',
-        },
-        {
-          name: 'Button groups',
-          url: '/buttons/button-groups',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Brand Buttons',
-          url: '/buttons/brand-buttons',
-          icon: 'icon-cursor',
-        },
+        } 
       ],
     },
     {
@@ -72,6 +74,32 @@ export default {
     },
     {
       name: 'DEPLOYMENT',
+      url: '/notifications',
+      icon: 'icon-bell',
+      children: [
+        {
+          name: 'NETWORKS',
+          url: '/icons/coreui-icons',
+          icon: 'icon-star',
+          badge: {
+            variant: 'info',
+            text: 'NEW',
+          },
+        },
+        {
+          name: 'REQUIRED THINGS',
+          url: '/icons/flags',
+          icon: 'icon-star',
+        },
+        {
+          name: 'REQUIRED THINGS',
+          url: '/icons/flags',
+          icon: 'icon-star',
+        },
+      ],
+    },
+    {
+      name: 'WIDGET',
       url: '/notifications',
       icon: 'icon-bell',
     },
